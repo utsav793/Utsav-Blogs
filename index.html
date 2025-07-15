@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Utsav Blogs - Personal coding and digital marketing journey.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Utsav Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/header.jpg" alt="Header Image" class="header-img">
+        <h1>Welcome to Utsav Blogs</h1>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="contact.html">Contact</a> 
+        </nav>
+    </header>
+    <main>
+        <input type="text" id="searchBox" onkeyup="searchPosts()" placeholder="Search blog posts...">
+        <button id="toggleBtn">Dark Mode</button>
+
+        <section id="blogPosts">
+            <article>
+                <h2>My First Blog</h2>
+                <p>Yeh Mera Pehla Blogs Website Hai. Main abhi coding seekh raha hoon.</p>
+            </article>
+            <article>
+                <h2>Why I Started Blogging</h2>
+                <p>Blogging se mujhe apne thoughts aur knowledge share karne ka mauka milta hai.</p>
+            </article>
+        </section>
+    </main>
+
+    <div id="interaction-box">
+        <button id="likeBtn">👍 Like (<span id="likeCount">0</span>)</button>
+        <button onclick="sharePost()">🔗 Share</button>
+        <button id="subscribeBtn">Subscribe</button>
+        <h3>Comments</h3>
+        <textarea id="commentInput" placeholder="Write your comment..."></textarea>
+        <button onclick="addComment()">Post</button>
+        <ul id="commentList"></ul>
+    </div>
+    <footer>
+        <img src="images/footer.jpg" alt="Footer Image" class="footer-img">
+        <p>&copy; 2025 Utsav Blogs | Follow me on 
+        <a href="#">YouTube</a>, <a href="#">Instagram</a></p>
+    </footer>
+</body>
+</html>
